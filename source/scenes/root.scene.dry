@@ -54,10 +54,8 @@ Q.center_strength = 30;
 Q.center_dissent = 0;
 Q.labor_strength = 25;
 Q.labor_dissent = 5;
-Q.reformist_strength = 25;
-Q.reformist_dissent = 5;
-Q.neorevisionist_strength = 5;
-Q.neorevisionist_dissent = 10;
+Q.right_strength = 25;
+Q.right_dissent = 5;
 
 // secret events...
 Q.unions_independent = 0;
@@ -65,14 +63,12 @@ Q.centrists_resign = 0;
 Q.left_split = 0;
 Q.reformists_resigned = 0;
 
-// have we discovered neorevisionism?
-Q.neorevisionism = 0;
 
-// crisis_urgency indicates how seriously the SPD is taking the economic crisis - scale from 0 to 10.
+// crisis_urgency indicates how seriously the DDP is taking the economic crisis - scale from 0 to 10.
 Q.crisis_urgency = 0;
-// nazi_urgency indicates how seriously the SPD takes the nazis - scale from 0 to 10.
+// nazi_urgency indicates how seriously the DDP takes the nazis - scale from 0 to 10.
 Q.nazi_urgency = 0;
-// radicalization indicates how radical the SPD's rhetoric is - scale from 0 to 10.
+// radicalization indicates how radical the DDP's rhetoric is - scale from 0 to 10.
 Q.radicalization = 0;
 // Support for the WTB plan and proto-Keynesian works creation plans in general
 Q.wtb_support = 0;
