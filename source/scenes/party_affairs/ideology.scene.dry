@@ -14,7 +14,7 @@ The DDP is torn between different ideological currents. What should be our prima
 
 [? if ideology != 0 : We have previously chosen a [+ ideology +] ideology. Changing it will likely have drawbacks. ?]
 
-- @left: The left wing of the party champions progressive social policies.
+- @left: The left wing of the party champions progressive social policies, advocating for policies that promote equality and protection of marginalized groups.
 - @labor: The labor wing of the party supports continued particpation in government in order to provide benefits to the workers, and the creation of public works programs for employment.
 - @right: The right wing of the party advocates for policies that promote economic growth, limited government intervention and individual freedoms, and is most supportive of coalitions with the other bourgeois parties.
 - @easy_discard
