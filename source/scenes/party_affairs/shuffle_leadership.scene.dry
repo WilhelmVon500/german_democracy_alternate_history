@@ -70,7 +70,7 @@ go-to: rm_main
 
 Breitscheid has been removed as an advisor. The Centrist faction disapproves.
 
-# reformists
+# right
 
 
 @remove_severing
@@ -231,8 +231,6 @@ Schumacher has been removed as an advisor. The Neorevisionist faction disapprove
 
 ## nonfactional
 
-# tbh I'm not sure if Baade should be a reformist or nonfactional. same for stampfer. they were vaguely reformist-aligned but had pretty different ideas from the other reformists here. so they're non-factional.
-
 @remove_baade
 title: Remove Baade
 view-if: baade_advisor = 1
@@ -292,7 +290,7 @@ frequency: 1
 
 - @centrist: Add Centrists
 - @left: Add Leftists
-- @reformist: Add Reformists
+- @reformist: Add Rightists
 - @labor: Add Labor
 - @neorev: Add Neorevisionists
 - @nonfactional: Add non-factional advisors
@@ -304,10 +302,10 @@ view-if: n_advisors < 3
 
 - #center_advisor
 
-@reformist
+@right
 view-if: n_advisors < 3
 
-- #reformist_advisor
+- #right_advisor
 
 @left
 view-if: n_advisors < 3
