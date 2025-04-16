@@ -530,11 +530,10 @@ Q.march_on_berlin_timer = 0;
 
 // all the initial advisors are centrists.
 Q.dietrich_advisor = 1; // Hermann Dietrich
-Q.muller_advisor = 1; // Hermann Müller
+Q.muller_advisor = 0; // Hermann Müller
 Q.muller_dead = 0;
-// okay I know Arthur Crispien was a leader irl but i couldn't find much interesting about him...
 Q.crispien_advisor = 0; // Arthur Crispien
-Q.hilferding_advisor = 1; // Rudolf Hilferding
+Q.hilferding_advisor = 0; // Rudolf Hilferding
 
 // left advisors
 Q.sender_advisor = 0; // Toni Sender
@@ -548,7 +547,7 @@ Q.pfulf_advisor = 0; // Antonie Pfülf
 Q.breitscheid_advisor = 0; // Rudolf Breitscheid
 
 // Reformist advisors
-Q.severing_advisor = 0; // Carl Severing
+Q.koch_weser_advisor = 1; // Erich Koch-Weser
 Q.braun_advisor = 0; // Otto Braun
 Q.juchacz_advisor = 0; // Marie Juchacz
 Q.baade_advisor = 0; // Fritz Baade
@@ -567,7 +566,7 @@ Q.schumacher_advisor = 0; // Kurt Schumacher (post-1930)
 
 // Nonfactional advisors
 Q.hirschfeld_advisor = 0; // Magnus Hirschfeld
-Q.radbruch_advisor = 0; // Gustav Radbruch
+Q.schiffer_advisor = 0; // Eugen Schiffer
 Q.stampfer_advisor = 0; // Friedrich Stampfer
 !}
 set-bg: img/map_2.jpg
