@@ -2,7 +2,7 @@ title: Ernst Lemmer
 is-pinned-card: true
 tags: advisor, reformist
 card-image: img/portraits/AufhäuserSiegfried.jpg
-view-if: aufhauser_advisor = 1
+view-if: lemmer_advisor = 1
 new-page: true 
 
 = Ernst Lemmer
