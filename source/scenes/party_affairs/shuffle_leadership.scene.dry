@@ -73,14 +73,14 @@ Breitscheid has been removed as an advisor. The Centrist faction disapproves.
 # right
 
 
-@remove_severing
-title: Remove Severing
-view-if: severing_advisor = 1
+@remove_koch_weser
+title: Remove Koch-Weser
+view-if: koch_weser_advisor = 1
 tags: remove_advisor
-on-arrival: severing_advisor = 0; right_dissent += 5; n_advisors -= 1
+on-arrival: koch_weser_advisor = 0; right_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
-Severing has been removed as an advisor. The Right faction disapproves.
+Koch-Weser has been removed as an advisor. The Right faction disapproves.
 
 @remove_braun
 title: Remove Braun
@@ -375,17 +375,17 @@ Rudolf Breitscheid is now an advisor.
 # right
 
 
-@add_severing
-title: Carl Severing
-subtitle: Carl Severing is a one-time Prussian interior minister and police reformer. {!<br><br>!}[? if difficulty < 0 : Actions - Prussian Bulwark, Police Affairs ?]
+@add_koch_weser
+title: Erich Koch-Weser
+subtitle: Erich Koch-Weser is a representative of the right wing of the party. He supports expansion of the party. {!<br><br>!}[? if difficulty < 0 : Actions - Police Affairs ?]
 is-card: true
-card-image: img/portraits/SeveringCarl.jpg
+card-image: img/portraits/KochWeserErich.jpg
 tags: right_advisor
-view-if: severing_advisor = 0 and n_advisors < 3
-on-arrival: severing_advisor = 1; n_advisors += 1; right_strength += 5
+view-if: koch_weser_advisor = 0 and n_advisors < 3
+on-arrival: koch_weser_advisor = 1; n_advisors += 1; right_strength += 5
 go-to: advisor_menu
 
-Carl Severing is now an advisor.
+Koch-Weser is now an advisor.
 
 @add_braun
 title: Otto Braun
