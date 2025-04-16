@@ -14,9 +14,9 @@ The DDP is torn between different ideological currents. What should be our prima
 
 [? if ideology != 0 : We have previously chosen a [+ ideology +] ideology. Changing it will likely have drawbacks. ?]
 
-- @left: The Center Marxism of Karl Kautsky remains the best way to resolve our internal contradictions.
-- @labor: We should work with the trade unions to improve the lives of workers.
-- @right: Following Eduard Bernstein, we should work for ethical socialism, strengthen democracy, and expand the party's electorate.
+- @left: The left wing of the party champions progressive social policies.
+- @labor: The labor wing of the party supports continued particpation in government in order to provide benefits to the workers, and the creation of public works programs for employment.
+- @right: The right wing of the party advocates for policies that promote economic growth, limited government intervention and individual freedoms, and is most supportive of coalitions with the other bourgeois parties.
 - @easy_discard
 
 @left
@@ -28,7 +28,7 @@ if (Q.ideology && Q.ideology != "left") {
 go-to: changed if changed = 1
 on-departure: ideology = "left"; left_strength += 10; left_dissent -= 5; z_relation -= 1; dvp_relation -= 3; spd_relation += 5
 
-They champion progressive social policies.
+The left wing of the party champions progressive social policies.
 
 @labor
 on-arrival: {!
