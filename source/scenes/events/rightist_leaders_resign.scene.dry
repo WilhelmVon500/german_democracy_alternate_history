@@ -1,0 +1,11 @@
+title: Right-wing leaders resign
+new-page: true 
+subtitle: Right-wing disagreements with our policies have grown too severe.
+tags: event
+view-if: right_dissent >= 60
+on-arrival: right_strength *= 0.3; old_middle_spd -= 10; old_middle_others += 5; n_advisors -= 1 if braun_advisor == 1; n_advisors -= 1 if severing_advisor == 1; braun_advisor = 0; severing_advisor = 0; right_resign = 1
+max-visits: 1
+
+= Right-wing leaders resign
+
+Our policy choices have greatly offended the rightist faction. Many of our most experienced leaders have resigned.
