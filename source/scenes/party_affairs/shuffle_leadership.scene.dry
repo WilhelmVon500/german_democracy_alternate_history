@@ -77,37 +77,37 @@ Breitscheid has been removed as an advisor. The Centrist faction disapproves.
 title: Remove Severing
 view-if: severing_advisor = 1
 tags: remove_advisor
-on-arrival: severing_advisor = 0; reformist_dissent += 5; n_advisors -= 1
+on-arrival: severing_advisor = 0; right_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
-Severing has been removed as an advisor. The Reformist faction disapproves.
+Severing has been removed as an advisor. The Right faction disapproves.
 
 @remove_braun
 title: Remove Braun
 view-if: braun_advisor = 1
 tags: remove_advisor
-on-arrival: braun_advisor = 0; reformist_dissent += 5; n_advisors -= 1
+on-arrival: braun_advisor = 0; right_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
-Braun has been removed as an advisor. The Reformist faction disapproves.
+Braun has been removed as an advisor. The Right faction disapproves.
 
 @remove_juchacz
 title: Remove Juchacz
 view-if: juchacz_advisor = 1
 tags: remove_advisor
-on-arrival: juchacz_advisor = 0; reformist_dissent += 5; n_advisors -= 1
+on-arrival: juchacz_advisor = 0; right_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
-Juchacz has been removed as an advisor. The Reformist faction disapproves.
+Juchacz has been removed as an advisor. The Right faction disapproves.
 
 @remove_pfulf
 title: Remove Pfülf
 view-if: pfulf_advisor = 1
 tags: remove_advisor
-on-arrival: pfulf_advisor = 0; reformist_dissent += 5; n_advisors -= 1
+on-arrival: pfulf_advisor = 0; right_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
-Pfülf has been removed as an advisor. The Reformist faction disapproves.
+Pfülf has been removed as an advisor. The Right faction disapproves.
 
 
 # labor
@@ -240,9 +240,6 @@ go-to: rm_main
 
 Baade has been removed as an advisor.
 
-#The Reformist faction disapproves.
-
-
 @remove_hirschfeld
 title: Remove Hirschfeld
 view-if: hirschfeld_advisor = 1
@@ -290,7 +287,7 @@ frequency: 1
 
 - @centrist: Add Centrists
 - @left: Add Leftists
-- @reformist: Add Rightists
+- @right: Add Rightists
 - @labor: Add Labor
 - @neorev: Add Neorevisionists
 - @nonfactional: Add non-factional advisors
@@ -375,7 +372,7 @@ tags: center_advisor
 
 Rudolf Breitscheid is now an advisor.
 
-# reformist
+# right
 
 
 @add_severing
@@ -385,7 +382,7 @@ is-card: true
 card-image: img/portraits/SeveringCarl.jpg
 tags: reformist_advisor
 view-if: severing_advisor = 0 and n_advisors < 3
-on-arrival: severing_advisor = 1; n_advisors += 1; reformist_strength += 5
+on-arrival: severing_advisor = 1; n_advisors += 1; right_strength += 5
 go-to: advisor_menu
 
 Carl Severing is now an advisor.
@@ -397,7 +394,7 @@ is-card: true
 card-image: img/portraits/BraunOtto.jpg
 tags: reformist_advisor
 view-if: braun_advisor = 0 and n_advisors < 3
-on-arrival: braun_advisor = 1; n_advisors += 1; reformist_strength += 5
+on-arrival: braun_advisor = 1; n_advisors += 1; right_strength += 5
 go-to: advisor_menu
 
 Otto Braun is now an advisor.
@@ -408,7 +405,7 @@ subtitle: Marie Juchacz is the founder of Worker's Welfare, a mutual-aid organiz
 is-card: true
 card-image: img/portraits/JuchaczMarie.jpg
 view-if: juchacz_advisor = 0 and n_advisors < 3
-on-arrival: juchacz_advisor = 1; n_advisors += 1; reformist_strength += 5
+on-arrival: juchacz_advisor = 1; n_advisors += 1; right_strength += 5
 go-to: advisor_menu
 tags: reformist_advisor
 
