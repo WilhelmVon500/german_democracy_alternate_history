@@ -512,7 +512,7 @@ Theodor Leipart is now an advisor.
 title: Ernst Lemmer
 subtitle: Ernst Lemmer is a liberal trade unionist. {!<br><br>!}[? if difficulty < 0 : Actions - Union-Party Coordination ?]
 is-card: true
-card-image: img/portraits/AufhäuserSiegfried.jpg
+card-image: img/portraits/LemmerErnst.jpg
 tags: labor_advisor
 view-if: lemmer_advisor = 0 and n_advisors < 3
 on-arrival: lemmer_advisor = 1; n_advisors += 1; labor_strength += 5
