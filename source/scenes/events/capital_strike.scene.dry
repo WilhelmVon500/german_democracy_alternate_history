@@ -3,7 +3,7 @@ subtitle: Germany's industries are idling...
 view-if: (capital_strike_progress >= 10 or budget <= -5) and spd_in_government
 new-page: true
 max-visits: 1
-on-arrival: unemployed += 5; workers_ddp*= 0.7; new_middle_spd -= 5; old_middle_ddp -= 5; unemployed_ddp*=0.7; rural_ddp -= 5; pro_republic -= 15; capital_strike_seen = 1; spd_relation -= 10; dvp_relation -= 10; workers_nsdap += 8; unemployed_nsdap += 10; new_middle_nsdap += 15; old_middle_nsdap += 15; rural_nsdap += 15; economic_growth -= 4;
+on-arrival: unemployed += 5; pro_republic -= 15; capital_strike_seen = 1; spd_relation -= 10; dvp_relation -= 10; workers_nsdap += 8; unemployed_nsdap += 10; new_middle_nsdap += 15; old_middle_nsdap += 15; rural_nsdap += 15; economic_growth -= 4;
 tags: event
 
 = Capital Strike
