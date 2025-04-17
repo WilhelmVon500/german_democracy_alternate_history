@@ -1,6 +1,6 @@
 title: DVP Collapse
 subtitle: The German People's Party collapsed!
-view-if: year == 1931 and month >= 6 and ddp_normalized > dvp_normalized and dnvp_normalized > dvp_normalized and nsdap_normalized > (dvp_normalized * 4)
+view-if: year >= 1932 and ddp_normalized > dvp_normalized and dnvp_normalized > dvp_normalized and nsdap_normalized > (dvp_normalized * 4)
 new-page: true
 max-visits: 1
 on-arrival: 
