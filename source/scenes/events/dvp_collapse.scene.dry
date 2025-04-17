@@ -1,7 +1,6 @@
 title: DVP Collapse
 subtitle: The German People's Party collapsed!
-view-if: year == 1928 and month >= 6
-#; ddp_normalized > dvp_normalized
+view-if: year == 1931 and month >= 6; ddp_normalized > dvp_normalized; dnvp_normalized > dvp_normalized
 new-page: true
 max-visits: 1
 on-arrival: 
@@ -17,3 +16,5 @@ This has led to outcry from the left wing of the party. Stresemannites oppose th
 
 @advantage
 #go-to: dnvp_dvp_merger
+
+Many DVP's left wing members prefer to join DDP.
