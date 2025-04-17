@@ -4,16 +4,17 @@ Q.dnvp_dvp_formed = 1;
 Q.dvp_exist = 0;
 
 Q.workers_dnvp += Q.workers_dvp;
-
+Q.workers_dvp = 0
 Q.new_middle_dnvp += Q.new_middle_dvp;
-
+Q.new_middle_dvp = 0
 Q.old_middle_dnvp += Q.old_middle_dvp;
-
+Q.old_middle_dvp = 0
 Q.rural_dnvp += Q.rural_dvp;
-
+Q.rural_dvp = 0
 Q.unemployed_dnvp += Q.unemployed_dvp;
-
+Q.unemployed_dvp = 0
 Q.catholics_dnvp += Q.catholics_dvp;
+Q.catholics_dvp = 0
 
 Q.new_middle_ddp += (Q.pro_republic / 25);
 Q.old_middle_ddp += (Q.pro_republic / 25);
