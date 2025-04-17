@@ -1,0 +1,33 @@
+on-arrival: {!
+
+Q.dnvp_dvp_formed = 1;
+Q.dvp_exist = 0;
+
+Q.workers_dnvp += Q.workers_dvp;
+
+Q.new_middle_dnvp += Q.new_middle_dvp;
+
+Q.old_middle_dnvp += Q.old_middle_dvp;
+
+Q.rural_dnvp += Q.rural_dvp;
+
+Q.unemployed_dnvp += Q.unemployed_dvp;
+
+Q.catholics_dnvp += Q.catholics_dvp;
+
+Q.new_middle_ddp += (Q.pro_republic / 25);
+Q.old_middle_ddp += (Q.pro_republic / 25);
+Q.new_middle_dnvp -= (Q.pro_republic / 25);
+Q.old_middle_dnvp -= (Q.pro_republic / 25);
+Q.rural_dnvp -= 3;
+
+Q.dnvp_r = Math.round((Q.dnvp_r + Q.dvp_r) * 10) / 10;
+
+Q.dvp_r = 0;
+Q.dvp_votes = 0;
+Q.dvp_normalized = 0;
+
+Q.parties = Q.parties.filter(party => party !== 'dvp');
+
+
+!}
