@@ -6,7 +6,7 @@ go-to: post_event if started = 1; start_menu if started = 0
 new-page: true
 go-to: start_menu_2
 
-= Social Democracy: An Alternate History
+= German Democracy: An Alternate History
 
 @start_menu_2
 
@@ -547,7 +547,7 @@ Q.seydewitz_advisor = 0; // Max Seydewitz
 Q.pfulf_advisor = 0; // Antonie Pfülf
 Q.breitscheid_advisor = 0; // Rudolf Breitscheid
 
-// Reformist advisors
+// right advisors
 Q.koch_weser_advisor = 1; // Erich Koch-Weser
 Q.braun_advisor = 0; // Otto Braun
 Q.juchacz_advisor = 0; // Marie Juchacz
@@ -561,7 +561,6 @@ Q.wissell_advisor = 0; // Rudolf Wissell
 
 // Revisionist advisors
 Q.mierendorff_advisor = 0; // Carlo Mierendorf (post-1930)
-
 Q.leber_advisor = 0; // Julius Leber (post-1930)
 Q.schumacher_advisor = 0; // Kurt Schumacher (post-1930)
 
@@ -623,6 +622,6 @@ go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
 It is a bright time for German democracy. After a period of struggle, inflation is finally under control, and the economy is expanding steadily. In foreign policy, we have reached agreements with the Western powers and the Soviet Union that might make genuine peace a reality. 
 
-Now, the task of Social Democracy is to prepare for the next election. The bourgeois-right government of Wilhelm Marx is unpopular, and we stand to gain. Perhaps the next government will have a socialist majority.
+Now, the task of German Democracy is to prepare for the next election. The bourgeois-right government of Wilhelm Marx is unpopular, and the left stands to gain. Perhaps the next government will have a socialist majority.
 
 
