@@ -36,12 +36,19 @@ President: [+ president +]
 Chancellor: [+ chancellor +] ([+ chancellor_party +])
 
 Labor Minister: [+ labor_minister +] ([+ labor_minister_party +])
+
 Interior Minister: [+ interior_minister +] ([+ interior_minister_party +])
+
 Finance Minister: [+ finance_minister +] ([+ finance_minister_party +])
+
 Economic Minister: [+ economic_minister +] ([+ economic_minister_party +])
+
 Justice Minister: [+ justice_minister +] ([+ justice_minister_party +])
+
 Foreign Minister: [+ foreign_minister +] ([+ foreign_minister_party +])
+
 Agriculture Minister: [+ agriculture_minister +] ([+ agriculture_minister_party +])
+
 Reichswehr Minister: [+ reichswehr_minister +] ([+ reichswehr_minister_party +])
 
 Reichstag composition:
