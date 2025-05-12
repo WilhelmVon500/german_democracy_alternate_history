@@ -581,7 +581,6 @@ on-arrival: chancellor = "Brüning"; chancellor_party = "Z"
 
 There is no path to an obviously workable majority. Since President Hindenburg is unwilling to work with a minority or caretaker SPD government, his preferred chancellor is Heinrich Brüning of the Center Party, who could lead a "presidential" government.
 
-- @toleration_bruning: We will tolerate Brüning.
 - @new_grand_coalition: We will try to form a new grand coalition.
 - @new_elections: We will have new elections.
 
@@ -609,7 +608,6 @@ Alternatively, we could try to form a "new grand coalition" of all constitutiona
 
 The third option is to have new elections.
 
-- @toleration_bruning: We will tolerate Brüning.
 - @new_grand_coalition: We will try to form a new grand coalition.
 - @new_elections: We will have new elections.
 - @unity_government
@@ -625,7 +623,6 @@ unavailable-subtitle: SPD + Z + BVP + [+ ddp_name +] + DVP + Others ([+ neo_weim
 How do we convince vehemently anti-socialist parties to allow us to form a majority coalition? Our largely benevolent relations with the Center and DVP may allow us some leverage.
 
 - @use_resources
-- @toleration_bruning: No. We will tolerate a minority government.
 - @new_elections: No. We will have new elections.
 - @unity_government
 
@@ -1241,8 +1238,8 @@ subtitle: Taking the Labor Ministry is expected of us.
 unavailable-subtitle: We do not have enough leverage.
 tags: mins_1928
 choose-if: leverage >= 5
-view-if: labor_minister_party != "SPD"
-on-arrival: leverage -= 5; labor_minister_party = "SPD"; labor_minister = "Wissell"
+view-if: labor_minister_party != ddp_name
+on-arrival: leverage -= 5; labor_minister_party = ddp_name; labor_minister = "Wissell"
 go-to: ministries
 
 Rudolf Wissell of the SPD has been appointed labor minister.
@@ -1253,8 +1250,8 @@ subtitle: Taking the Interior Ministry is expected of us. The Interior Ministry 
 unavailable-subtitle: We do not have enough leverage.
 tags: mins_1928
 choose-if: leverage >= 5
-view-if: interior_minister_party != "DDP"
-on-arrival: leverage -= 5; interior_minister_party = "SPD"; interior_minister = "Severing"
+view-if: interior_minister_party != ddp_name
+on-arrival: leverage -= 5; interior_minister_party = ddp_name; interior_minister = "Severing"
 go-to: ministries
 
 Carl Severing of the SPD has been appointed Interior Minister.
@@ -1265,8 +1262,8 @@ subtitle: The Finance Ministry controls the government budget and taxes.
 unavailable-subtitle: We do not have enough leverage.
 tags: mins_1928
 choose-if: leverage >= 10 
-view-if: finance_minister_party != "SPD"
-on-arrival: leverage -= 10; finance_minister_party = "SPD"; finance_minister = "Hilferding"
+view-if: finance_minister_party != ddp_name
+on-arrival: leverage -= 10; finance_minister_party = ddp_name; finance_minister = "Hilferding"
 go-to: ministries
 
 Rudolf Hilferding of the SPD has been appointed Finance Minister.
@@ -1277,8 +1274,8 @@ subtitle: The Economic Ministry controls broader economic policy.
 unavailable-subtitle: We do not have enough leverage.
 tags: mins_1928
 choose-if: leverage >= 10 
-view-if: economic_minister_party != "SPD"
-on-arrival: leverage -= 10; economic_minister_party = "SPD"; economic_minister = "Schmidt"
+view-if: economic_minister_party != ddp_name
+on-arrival: leverage -= 10; economic_minister_party = ddp_name; economic_minister = "Schmidt"
 go-to: ministries
 
 Robert Schmidt of the SPD has been appointed Economic Minister.
@@ -1289,8 +1286,8 @@ subtitle: The Justice Ministry controls the courts.
 unavailable-subtitle: We do not have enough leverage.
 tags: mins_1928
 choose-if: leverage >= 10 
-view-if: justice_minister_party != "SPD"
-on-arrival: leverage -= 10; justice_minister_party = "SPD"; justice_minister = "Radbruch"
+view-if: justice_minister_party != ddp_name
+on-arrival: leverage -= 10; justice_minister_party = ddp_name; justice_minister = "Radbruch"
 go-to: ministries
 
 Gustav Radbruch of the SPD has been appointed Justice Minister.
@@ -1301,8 +1298,8 @@ subtitle: This is usually the domain of Gustav Stresemann of the DVP.
 unavailable-subtitle: We do not have enough leverage.
 tags: mins_1928
 choose-if: leverage >= 10 
-view-if: foreign_minister_party != "SPD"
-on-arrival: leverage -= 10; foreign_minister_party = "SPD"; foreign_minister = "Breitscheid"
+view-if: foreign_minister_party != ddp_name
+on-arrival: leverage -= 10; foreign_minister_party = ddp_name; foreign_minister = "Breitscheid"
 go-to: ministries
 
 Rudolf Breitscheid of the SPD has been appointed Foreign Minister.
@@ -1313,8 +1310,8 @@ title: Agricultural Ministry
 subtitle: This is not our usual domain.
 unavailable-subtitle: We do not have enough leverage.
 choose-if: leverage >= 10 
-view-if: agriculture_minister_party != "SPD"
-on-arrival: leverage -= 10; agriculture_minister_party = "SPD"; agriculture_minister = "Baade"
+view-if: agriculture_minister_party != ddp_name
+on-arrival: leverage -= 10; agriculture_minister_party = ddp_name; agriculture_minister = "Baade"
 go-to: ministries
 tags: mins_1928
 
@@ -1326,11 +1323,11 @@ subtitle: The Ministry responsible for the armed forces is not typically our dom
 unavailable-subtitle: We do not have enough leverage.
 tags: mins_1928
 choose-if: leverage >= 15 
-view-if: reichswehr_minister_party != "SPD"
-on-arrival: leverage -= 15; reichswehr_minister_party = "SPD"; reichswehr_minister = "Leber"
+view-if: reichswehr_minister_party != ddp_name
+on-arrival: leverage -= 15; reichswehr_minister_party = ddp_name; reichswehr_minister = "Gessler"
 go-to: ministries
 
-Julius Leber of the SPD has been appointed Reichswehr Minister.
+Otto Gessler of the ddp_name has been appointed Reichswehr Minister.
 
 
 
