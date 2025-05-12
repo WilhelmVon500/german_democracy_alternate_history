@@ -1248,12 +1248,12 @@ title: Interior Ministry
 subtitle: Taking the Interior Ministry is expected of us. The Interior Ministry controls domestic security.
 unavailable-subtitle: We do not have enough leverage.
 tags: mins_1928
-choose-if: leverage >= 5
+choose-if: leverage >= 10
 view-if: interior_minister_party != ddp_name
-on-arrival: leverage -= 5; interior_minister_party = ddp_name; interior_minister = "Severing"
+on-arrival: leverage -= 10; interior_minister_party = ddp_name; interior_minister = "Koch-Weser"
 go-to: ministries
 
-Carl Severing of the SPD has been appointed Interior Minister.
+Erich Koch-Weser of the ddp_name has been appointed Interior Minister.
 
 @finance
 title: Finance Ministry
@@ -1262,10 +1262,10 @@ unavailable-subtitle: We do not have enough leverage.
 tags: mins_1928
 choose-if: leverage >= 10 
 view-if: finance_minister_party != ddp_name
-on-arrival: leverage -= 10; finance_minister_party = ddp_name; finance_minister = "Hilferding"
+on-arrival: leverage -= 10; finance_minister_party = ddp_name; finance_minister = "Dietrich"
 go-to: ministries
 
-Rudolf Hilferding of the SPD has been appointed Finance Minister.
+Hermann Dietrich of the ddp_name has been appointed Finance Minister.
 
 @economic
 title: Economic Ministry
@@ -1274,22 +1274,22 @@ unavailable-subtitle: We do not have enough leverage.
 tags: mins_1928
 choose-if: leverage >= 10 
 view-if: economic_minister_party != ddp_name
-on-arrival: leverage -= 10; economic_minister_party = ddp_name; economic_minister = "Schmidt"
+on-arrival: leverage -= 10; economic_minister_party = ddp_name; economic_minister = "Hamm"
 go-to: ministries
 
-Robert Schmidt of the SPD has been appointed Economic Minister.
+Eduard Hamm of the ddp_name has been appointed Economic Minister.
 
 @justice
 title: Justice Ministry
 subtitle: The Justice Ministry controls the courts.
 unavailable-subtitle: We do not have enough leverage.
 tags: mins_1928
-choose-if: leverage >= 10 
+choose-if: leverage >= 5
 view-if: justice_minister_party != ddp_name
-on-arrival: leverage -= 10; justice_minister_party = ddp_name; justice_minister = "Radbruch"
+on-arrival: leverage -= 5; justice_minister_party = ddp_name; justice_minister = "Schiffer"
 go-to: ministries
 
-Gustav Radbruch of the SPD has been appointed Justice Minister.
+Eugen Schiffer of the ddp_name has been appointed Justice Minister.
 
 @foreign
 title: Foreign Ministry
@@ -1347,7 +1347,7 @@ go-to: ministries
 @drop_interior
 title: Drop the Interior Ministry.
 view-if: interior_minister_party = ddp_name
-on-arrival: interior_minister_party = "Z"; interior_minister = "Wirth"; leverage += 5;
+on-arrival: interior_minister_party = "Z"; interior_minister = "Wirth"; leverage += 10; interior_minister_party = "SPD" if in_weimar_coalition or in_popular_front; interior_minister = "Severing" if in_weimar_coalition or in_popular_front;
 tags: drop_mins_1928
 go-to: ministries
 
@@ -1368,7 +1368,7 @@ go-to: ministries
 @drop_justice
 title: Drop the Justice Ministry.
 view-if: justice_minister_party = ddp_name
-on-arrival: justice_minister_party = ddp_name; justice_minister = "Koch-Weser"; leverage += 10;
+on-arrival: justice_minister_party = ddp_name; justice_minister = "Koch-Weser"; leverage += 5; justice_minister_party = "SPD" if in_weimar_coalition or in_popular_front; justice_minister = "Radbruch" if in_weimar_coalition or in_popular_front;
 tags: drop_mins_1928
 go-to: ministries
 
