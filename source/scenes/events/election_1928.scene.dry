@@ -1236,9 +1236,9 @@ title: Labor Ministry
 subtitle: Taking the Labor Ministry is expected of us.
 unavailable-subtitle: We do not have enough leverage.
 tags: mins_1928
-choose-if: leverage >= 5
+choose-if: leverage >= 15
 view-if: labor_minister_party != ddp_name
-on-arrival: leverage -= 5; labor_minister_party = ddp_name; labor_minister = "Wissell"
+on-arrival: leverage -= 15; labor_minister_party = ddp_name; labor_minister = "Wissell"
 go-to: ministries
 
 Rudolf Wissell of the SPD has been appointed labor minister.
@@ -1340,7 +1340,7 @@ This coalition arrangement is tolerable to all.
 @drop_labor
 title: Drop the Labor Ministry.
 view-if: labor_minister_party = ddp_name
-on-arrival: labor_minister_party = "Z"; labor_minister = "Stegerwald"; leverage += 5;
+on-arrival: labor_minister_party = "Z"; labor_minister = "Stegerwald"; leverage += 15;
 tags: drop_mins_1928
 go-to: ministries
 
