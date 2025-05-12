@@ -918,7 +918,7 @@ We have won the vote of no confidence, and are currently ruling under an SPD min
 title: We can form a Weimar Coalition.
 subtitle: SPD + Z + [+ ddp_name +] [? if sapd_formed and kpd_relation >= 30 : + SAPD toleration ?] ([+ weimar_coalition +]%)
 view-if: weimar_coalition >= 50
-on-arrival: leverage += 5; leverage += 5 if z_party_leader == "Joos"; in_weimar_coalition = 1; spd_in_government = 1; in_popular_front = 0; in_left_front = 0; foreign_minister_party = "Z"; interior_minister_party = "Z"; justice_minister_party = ddp_name; labor_minister_party = "Z"; reichswehr_minister_party = "I"; economic_minister_party = ddp_name; finance_minister_party = "Z"; agriculture_minister_party = "Z"; foreign_minister = "Wirth"; interior_minister = "Wirth"; justice_minister = "Koch-Weser"; labor_minister = "Stegerwald"; reichswehr_minister = "Groener"; economic_minister = "Dietrich"; finance_minister = "Köhler"; agriculture_minister = "Hermes";
+on-arrival: leverage += 5; leverage += 5 if z_party_leader == "Joos"; in_weimar_coalition = 1; spd_in_government = 1; in_popular_front = 0; in_left_front = 0; foreign_minister_party = "Z"; interior_minister_party = "SPD"; justice_minister_party = "SPD"; labor_minister_party = "Z"; reichswehr_minister_party = "I"; economic_minister_party = "SPD"; finance_minister_party = "Z"; agriculture_minister_party = "Z"; foreign_minister = "Wirth"; interior_minister = "Severing"; justice_minister = "Radbruch"; labor_minister = "Stegerwald"; reichswehr_minister = "Groener"; economic_minister = "Schmidt"; finance_minister = "Köhler"; agriculture_minister = "Hermes";
 achievement: weimar_coalition
 
 We have enough votes to form a "Weimar Coalition" government consisting of the SPD, Center (Z) and Democratic ([+ ddp_name +]) parties! This has been our preferred governing coalition since 1919.
@@ -1238,10 +1238,10 @@ unavailable-subtitle: We do not have enough leverage.
 tags: mins_1928
 choose-if: leverage >= 15
 view-if: labor_minister_party != ddp_name
-on-arrival: leverage -= 15; labor_minister_party = ddp_name; labor_minister = "Wissell"
+on-arrival: leverage -= 15; labor_minister_party = ddp_name; labor_minister = "Erkelenz"
 go-to: ministries
 
-Rudolf Wissell of the SPD has been appointed labor minister.
+Anton Erkelenz of the ddp_name has been appointed labor minister.
 
 @interior
 title: Interior Ministry
@@ -1361,7 +1361,7 @@ go-to: ministries
 @drop_economic
 title: Drop the Economic Ministry.
 view-if: economic_minister_party = ddp_name
-on-arrival: economic_minister_party = "DVP"; economic_minister = "Curtius"; leverage += 10; economic_minister_party = "Z" if in_weimar_coalition or in_popular_front; economic_minister = "WIP" if in_weimar_coalition or in_popular_front;
+on-arrival: economic_minister_party = "DVP"; economic_minister = "Curtius"; leverage += 10; economic_minister_party = "SPD" if in_weimar_coalition or in_popular_front; economic_minister = "Schmidt" if in_weimar_coalition or in_popular_front;
 tags: drop_mins_1928
 go-to: ministries
 
